@@ -4,7 +4,7 @@
 
   <groupId>NexusProject</groupId>
   <artifactId>NexusProject</artifactId>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <packaging>jar</packaging>
 
   <name>NexusProject</name>
@@ -34,10 +34,10 @@
 		<name>Jenkins Releases</name>
 		<url>http://repo.jenkins-ci.org/releases</url>
 	</repository>
-    <repository>
+   <!--  <repository>
       <id>maven-group</id>
       <url>http://localhost:8081/repository/maven-central/</url>
-    </repository>
+    </repository>--> 
   </repositories>
 <distributionManagement>
     <snapshotRepository>
