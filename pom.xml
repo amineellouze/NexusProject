@@ -13,7 +13,6 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
  <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -30,6 +29,11 @@
 	</dependency>
  </dependencies>
  <repositories>
+ <repository>
+		<id>jenkins-releases</id>
+		<name>Jenkins Releases</name>
+		<url>http://repo.jenkins-ci.org/releases</url>
+	</repository>
     <repository>
       <id>maven-group</id>
       <url>http://localhost:8081/repository/maven-central/</url>
