@@ -72,7 +72,7 @@
         <profile>
             <id>sonar</id>
             <activation>
-                <activeByDefault>true</activeByDefault>
+                <activeByDefault>false</activeByDefault>
             </activation>
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
