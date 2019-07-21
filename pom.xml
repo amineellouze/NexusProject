@@ -22,29 +22,7 @@
     </dependency>
  </dependencies>
  
- <repositories>
-     <repository>
-      <id>maven-group</id>
-      <url>http://localhost:8081/repository/maven-central/</url>
-	<releases> 
-	<enabled>true</enabled> 
-	</releases> 
-	<snapshots> 
-	<enabled>true</enabled> 
-	</snapshots> 
-	</repository> 
-  </repositories>
-  
-  <distributionManagement>
-    <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://localhost:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-    <repository>
-      <id>nexus-releases</id>
-      <url>http://localhost:8081/repository/maven-releases/</url>
-    </repository>
-  </distributionManagement>
+
 
   <build>
 	<pluginManagement>
@@ -73,5 +51,16 @@
    </plugins>
   </build>
   
-
+  <profiles>
+        <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url> http://localhost:9000 </sonar.host.url>
+            </properties>
+        </profile>
+     </profiles>
 </project>
