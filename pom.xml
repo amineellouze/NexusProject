@@ -22,23 +22,7 @@
     </dependency>
  </dependencies>
  
- <repositories>
-     <repository>
-      <id>maven-group</id>
-      <url>http://localhost:8081/repository/maven-central/</url>
-    </repository>
-<repository> 
-<id>central</id> 
-<url>http://localhost:8081/repository/maven-central/</url> 
-<releases> 
-<enabled>true</enabled> 
-</releases> 
-<snapshots> 
-<enabled>true</enabled> 
-</snapshots> 
-</repository> 
-  </repositories>
-  
+ 
   <distributionManagement>
     <snapshotRepository>
       <id>nexus-snapshots</id>
