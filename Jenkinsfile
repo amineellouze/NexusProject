@@ -1,5 +1,4 @@
 node {
-    stages {
          stage('checkout') {
             steps {
                 echo 'Hello, git'
@@ -19,5 +18,4 @@ node {
                 bat 'mvn deploy'
             }
         }
-    }
 }
